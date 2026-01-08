@@ -32,6 +32,4 @@
 ---
 
 ## How to Run
-### 1) 建立環境與安裝依賴
-```bash
-pip install -r requirements.txt
+建議使用 Jupyter / VS Code / Colab 開啟 notebook 執行。
