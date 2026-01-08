@@ -5,7 +5,7 @@
 
 ## Files
 - `LSTM.ipynb`：LSTM baseline 訓練與評估
-- `Experiment.ipynb`：對照/消融實驗整理（GRU、distribution shift、label noise、no grad clipping、Seq2Seq 等）
+- `Experiment.ipynb`：對照實驗整理（GRU、distribution shift、label noise、no grad clipping、Seq2Seq 等）
 - `arithmetic_train.csv` / `arithmetic_eval.csv`：訓練/驗證資料（pieces）
 - `requirements.txt`：環境依賴
 
