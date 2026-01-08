@@ -26,12 +26,11 @@
 **重點：** 將「算式 → 答案」視為字元層級序列生成：輸入如 `12+34=`，模型需在 `=` 後逐字生成答案並在 `<eos>` 停止 :contentReference[oaicite:4]{index=4}  
 我以 2-layer LSTM 為 baseline，並設計五組實驗觀察記憶機制、分佈漂移、label noise、訓練穩定性與 input reversal 的影響 :contentReference[oaicite:5]{index=5}
 
-- 原始 Arithmetic dataset：Train 2,369,250 pieces / Eval 263,250 pieces；每筆為 2–3 個運算元、每個數字在 [0,50) :contentReference[oaicite:6]{index=6}  
-- Baseline 超參數（節錄）：`batch_size=64`, `epochs=10`, `embed_dim=256`, `hidden_dim=256`, `Adam(lr=0.001)`, `grad_clip=1` :contentReference[oaicite:7]{index=7}  
-- LSTM vs GRU：最終 LSTM validation accuracy 0.8927，GRU 0.7366 :contentReference[oaicite:8]{index=8}  
-- 不使用 gradient clipping：觀察到 loss 在特定 epoch 暴衝、validation 收斂不穩，最終 accuracy 0.4678 :contentReference[oaicite:9]{index=9}  
-- Seq2Seq + input reversal：loss 可下降但 accuracy 僅 0.1157（推測「整段反轉」破壞算式結構對齊） :contentReference[oaicite:10]{index=10}  
-
+- 原始 Arithmetic dataset：Train 2,369,250 pieces / Eval 263,250 pieces；每筆為 2–3 個運算元、每個數字在 [0,50) 
+- Baseline 超參數（節錄）：`batch_size=64`, `epochs=10`, `embed_dim=256`, `hidden_dim=256`, `Adam(lr=0.001)`, `grad_clip=1` 
+- LSTM vs GRU：最終 LSTM validation accuracy 0.8927，GRU 0.7366 
+- 不使用 gradient clipping：觀察到 loss 在特定 epoch 暴衝、validation 收斂不穩，最終 accuracy 0.4678
+- Seq2Seq + input reversal：loss 可下降但 accuracy 僅 0.1157（推測「整段反轉」破壞算式結構對齊） 
 📁 Project folder: `projects/arithmetic-answer-generation/`
 
 
