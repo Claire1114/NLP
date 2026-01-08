@@ -1,7 +1,6 @@
-# NLP相關實作專案
-# NLP Portfolio (Course Projects)
+# NLP Portfolio 
 
-本 repository 收錄我在 NLP 課程中完成並整理成「可展示 / 可重現」形式的兩個專案，涵蓋：
+收錄NLP相關兩個專案，涵蓋：
 - **詞向量（Word Embeddings）**：Word2Vec / GloVe 與 word analogy 任務評估
 - **序列生成（Sequence Generation）**：以字元層級 RNN/LSTM/GRU 生成算式答案，並系統性做 ablation / robustness 實驗
 
