@@ -34,15 +34,4 @@
 
 📁 Project folder: `projects/arithmetic-answer-generation/`
 
----
 
-## Reproducibility (How to Run)
-
-> Each project has its own environment. Please install dependencies per project.
-
-Example:
-```bash
-cd projects/arithmetic-answer-generation
-pip install -r requirements.txt
-python -m src.train
-python -m src.evaluate
