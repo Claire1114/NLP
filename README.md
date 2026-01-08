@@ -23,8 +23,8 @@
 ---
 
 ### 2) Arithmetic Answer Generation with Character-level Sequence Models (LSTM/GRU/Seq2Seq)
-**重點：** 將「算式 → 答案」視為字元層級序列生成：輸入如 `12+34=`，模型需在 `=` 後逐字生成答案並在 `<eos>` 停止 :contentReference[oaicite:4]{index=4}  
-我以 2-layer LSTM 為 baseline，並設計五組實驗觀察記憶機制、分佈漂移、label noise、訓練穩定性與 input reversal 的影響 :contentReference[oaicite:5]{index=5}
+**重點：** 將「算式 → 答案」視為字元層級序列生成：輸入如 `12+34=`，模型需在 `=` 後逐字生成答案並在 `<eos>` 停止 
+我以 2-layer LSTM 為 baseline，並設計五組實驗觀察記憶機制、分佈漂移、label noise、訓練穩定性與 input reversal 的影響 
 
 - 原始 Arithmetic dataset：Train 2,369,250 pieces / Eval 263,250 pieces；每筆為 2–3 個運算元、每個數字在 [0,50) 
 - Baseline 超參數（節錄）：`batch_size=64`, `epochs=10`, `embed_dim=256`, `hidden_dim=256`, `Adam(lr=0.001)`, `grad_clip=1` 
