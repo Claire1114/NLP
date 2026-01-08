@@ -23,7 +23,9 @@
 本專案以 **Google Word Analogy Dataset** 作為評估基準，採用 **Word2Vec (Skip-gram)** 訓練詞向量，並設計三組對照實驗，系統性比較「語料規模」、「語料領域」與「類比推理 scoring」對模型表現的影響。
 
 **1) Wikipedia 抽樣比例比較（5% vs 10% vs 20%）** 觀察語料規模（5%→20%）對 analogy 準確率的邊際收益。
+
 **2) 訓練語料庫比較（Wikipedia Wiki20 vs News Crawl News25）：** 比較知識導向（Wikipedia）與時事/日常語境導向（News Crawl）對語義/語法任務的影響。
+
 **3) 類比推理算法比較（3CosAdd vs 3CosMul）：** 比較傳統 3CosAdd 與 3CosMul 在 analogy 任務的差異，特別關注語法型子題。
 
 
