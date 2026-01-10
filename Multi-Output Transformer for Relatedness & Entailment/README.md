@@ -39,5 +39,5 @@
 1. 建議建立虛擬環境並安裝套件(requirements.txt)
 2. 執行 Notebook(Multi-Output Transformer for Relatedness & Entailment ... .ipynb)
 **Checkpoints（最佳模型權重）**
-由於 `.ckpt` 檔案較大，本 repo 不直接附上。請下載[[點此下載模型權重 (Google Drive)](你的網址)](https://drive.google.com/drive/folders/1To5HiXPBCOgDJ-aDEKDm7lRgAYjJGCpQ?usp=drive_link)
+由於 `.ckpt` 檔案較大，本 repo 不直接附上。請下載[點此下載模型權重（Google Drive）](https://drive.google.com/drive/folders/1To5HiXPBCOgDJ-aDEKDm7lRgAYjJGCpQ?usp=drive_link)
 
