@@ -35,7 +35,7 @@
 📁 Folder: `Multi-output_SentencePair_Learning/`
 
 **重點內容**
-- 以 **BERT-base-uncased multi-output（dual-head）**作為基線，同時進行：  
+- 以 **BERT-base-uncased multi-output（dual-head）** 作為基線，同時進行：  
   - **語意相關度回歸**（Test Pearson）  
   - **文本蘊含三分類**（Test Accuracy）
 - 三組實驗：  
