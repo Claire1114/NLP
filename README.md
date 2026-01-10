@@ -3,6 +3,8 @@
 收錄NLP相關兩個專案，涵蓋：
 - **詞向量（Word Embeddings）**：Word2Vec / GloVe 與 word analogy 任務評估
 - **序列生成（Sequence Generation）**：以字元層級 RNN/LSTM/GRU 生成算式答案，並系統性做 ablation / robustness 實驗
+- **多輸出學習（Multi-output Learning）**：句對任務同時做語意回歸 + 蘊含分類（BERT/RoBERTa/GPT-2）
+
 
 ---
 
@@ -29,4 +31,17 @@
 
 ---
 
+## Project 3 — Multi-output Sentence Pair Learning (BERT / RoBERTa / GPT-2)
+📁 Folder: `Multi-output_SentencePair_Learning/`
 
+**重點內容**
+- 以 **BERT-base-uncased multi-output（dual-head）**作為基線，同時進行：  
+  - **語意相關度回歸**（Test Pearson）  
+  - **文本蘊含三分類**（Test Accuracy）
+- 三組實驗：  
+  - **(A) Multi-output vs 單任務**：分類提升（0.8910 vs 0.8567），回歸略折衷（0.8900 vs 0.8945）  
+  - **(B) Backbone 比較**：RoBERTa 最佳（0.9063/0.8947），BERT 次之（0.8900/0.8910），GPT-2 較弱（0.7074/0.7668）  
+  - **(C) Weighted CE 消融**：整體下降（0.8778/0.8502），支持主要瓶頸偏向 **task conflict**
+- 包含錯誤分析與改進方向（反義詞/語意階層/句構混淆 → 資料增強、強模型、衝突緩解）
+
+➡️ 詳細方法、實驗設定與結果請見該資料夾內 README / 報告。
