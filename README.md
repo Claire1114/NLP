@@ -32,7 +32,7 @@
 ---
 
 ## Project 3 — Multi-output Sentence Pair Learning (BERT / RoBERTa / GPT-2)
-📁 Folder: `Multi-output_SentencePair_Learning/`
+📁 Folder: `Multi-Output Transformer for Relatedness & Entailment/`
 
 **重點內容**
 - 以 **BERT-base-uncased multi-output（dual-head）** 作為基線，同時進行：  
