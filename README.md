@@ -1,6 +1,6 @@
 # NLP Portfolio 
 
-收錄NLP相關兩個專案，涵蓋：
+收錄NLP相關三個專案，涵蓋：
 - **詞向量（Word Embeddings）**：Word2Vec / GloVe 與 word analogy 任務評估
 - **序列生成（Sequence Generation）**：以字元層級 RNN/LSTM/GRU 生成算式答案，並系統性做 ablation / robustness 實驗
 - **多輸出學習（Multi-output Learning）**：句對任務同時做語意回歸 + 蘊含分類（BERT/RoBERTa/GPT-2）
